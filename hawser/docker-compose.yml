@@ -1,0 +1,11 @@
+services:
+  hawser:
+    image: ghcr.io/finsys/hawser:latest
+    container_name: hawser
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/docker/hawser/stacks:/data/stacks
+    environment:
+      - DOCKHAND_SERVER_URL=${DOCKHAND_SERVER_URL}
+      - TOKEN=${HAWSER_TOKEN}

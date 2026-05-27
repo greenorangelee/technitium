@@ -1,0 +1,3 @@
+# ── Hawser 에이전트 ───────────────────────────────────────
+DOCKHAND_SERVER_URL=ws://10.100.100.111:3000/api/hawser/connect
+HAWSER_TOKEN=your-hawser-token-here
