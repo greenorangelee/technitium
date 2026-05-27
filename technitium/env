@@ -1,0 +1,3 @@
+# ── Technitium DNS ────────────────────────────────────────
+DNS_SERVER_DOMAIN=dns.example.com
+DNS_SERVER_ADMIN_PASSWORD=your-admin-password-here
