@@ -26,7 +26,6 @@ technitium-dns-setup/
 ├── technitium/
 │   ├── docker-compose.yml   # Technitium DNS Server
 │   └── .env                 # Technitium 환경변수
-├── .gitignore
 └── README.md
 ```
 
@@ -61,7 +60,7 @@ Proxmox 웹 UI에서 새 LXC 컨테이너 생성:
 | 템플릿 | ubuntu-24.04-standard |
 | vCPU | 2코어 |
 | RAM | 2048 MB |
-| 디스크 | 20 GB |
+| 디스크 | 32 GB |
 | 네트워크 | 고정 IP (10.100.100.121/24) |
 | DNS VLAN | 해당 VLAN tag 지정 |
 
