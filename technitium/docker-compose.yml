@@ -41,7 +41,7 @@ services:
       - /home/docker/dockhand/data/stacks/technitium-dns/config:/etc/dns
       - /home/docker/dockhand/data/stacks/technitium-dns/logs:/var/log/technitium/dns
     healthcheck:
-      test: ["CMD-SHELL", "netstat -tlnp 2>/dev/null | grep 5380 || exit 1"]
+      test: ["CMD-SHELL", "grep -q '1504' /proc/net/tcp6"]
       interval: 30s
       timeout: 10s
       retries: 3
